@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function playhorse() {
+          var audiohorse = document.getElementById("audiohorse");
+          audiohorse.play();
+        }
+    </script>
 </head>
 <body>
     <div class="flex-parent">
-        <div class="flex-child">
+        <div onclick="playhorse()" class="flex-child">
             <h1>🐎</h1>
             <p>*Horse sounds*</p>
         </div>
@@ -36,4 +42,5 @@
             <p>Bark</p>
         </div>
     </div>
+    <audio id="audiohorse" src="/audio/horse.mp3"></audio>
 </body>
