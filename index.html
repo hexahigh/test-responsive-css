@@ -9,6 +9,30 @@
           var audiohorse = document.getElementById("audiohorse");
           audiohorse.play();
         }
+        function playcow() {
+          var audiocow = document.getElementById("audiocow");
+          audiocow.play();
+        }
+        function playpig() {
+          var audiopig = document.getElementById("audiopig");
+          audiopig.play();
+        }
+        function playmonke() {
+          var audiomonke = document.getElementById("audiomonke");
+          audiomonke.play();
+        }
+        function playblub() {
+          var audiopig = document.getElementById("audioblub");
+          audioblub.play();
+        }
+        function playmeow() {
+          var audiopig = document.getElementById("audiomeow");
+          audiomeow.play();
+        }
+        function playdog() {
+          var audiopig = document.getElementById("audiodog");
+          audiodog.play();
+        }
     </script>
 </head>
 <body>
@@ -17,30 +41,36 @@
             <h1>🐎</h1>
             <p>*Horse sounds*</p>
         </div>
-        <div class="flex-child">
+        <div onclick="playcow()" class="flex-child">
             <h1>🐄</h1>
             <p>Mooo</p>
         </div>
-        <div class="flex-child">
+        <div onclick="playpig()" class="flex-child">
             <h1>🐖</h1>
             <p>Oink oink</p>
         </div>
-        <div class="flex-child">
+        <div onclick="playmonke()" class="flex-child">
             <h1>🐒</h1>
             <p>Monke</p>
         </div>
-        <div class="flex-child">
+        <div onclick="playblub()" class="flex-child">
             <h1>🐟</h1>
             <p>Blub blub</p>
         </div>
-        <div class="flex-child">
+        <div onclick="playmeow()" class="flex-child">
             <h1>🐱</h1>
             <p>Meow</p>
         </div>
-        <div class="flex-child">
+        <div onclick="playdog()" class="flex-child">
             <h1>🐕</h1>
             <p>Bark</p>
         </div>
     </div>
     <audio id="audiohorse" src="audio/horse.mp3"></audio>
+    <audio id="audiocow" src="audio/mooo.mp3"></audio>
+    <audio id="audiopig" src="audio/oink.mp3"></audio>
+    <audio id="audiomonke" src="audio/Monke.mp3"></audio>
+    <audio id="audioblub" src="audio/Blub.mp3"></audio>
+    <audio id="audiomeow" src="audio/Meow.mp3"></audio>
+    <audio id="audiodog" src="audio/Bark.mp3"></audio>
 </body>
